@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cierre de mesas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+  
+    <header>
+        
+    </header>
+    <body>
+        <h1>Cierre de Mesas </h1>
+        <form class="form" id="formulario">
+            <label for="nombrePagador">Nombre del Pagador:</label>
+            <input type="text" id="nombrePagador" required>
+    
+            <label for="legajoPagador">Legajo del Pagador:</label>
+            <input type="number" id="legajoPagador" required>
+    
+            <label for="nombreJefe">Nombre del Jefe:</label>
+            <input type="text" id="nombreJefe" required>
+    
+            <label for="legajoJefe">Legajo del Jefe:</label>
+            <input type="number" id="legajoJefe" required>
+    
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" required>
+    
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" required>
+    
+            <label for="mesa">Número de Mesa:</label>
+            <input type="number" id="mesa" min="1" required>
+    
+            <label for="juego">Juego:</label>
+            <select id="juego" required>
+                <option value="">Seleccione un juego</option>
+                <option value="Ruleta">Ruleta</option>
+                <option value="Punto y Banca">Punto y Banca</option>
+                <option value="Black Jack">Black Jack</option>
+                <option value="Craps">Craps</option>
+                <option value="Poker">Poker</option>
+            </select>
+    <div id="separador"></div>
+
+            <h2>Detalle de Fichas</h2>
+        
+        <form class="form" id="formulario">
+            <label for="ficha500000"> Fichas de 500,000:</label>
+            <input type="number" id="ficha500000" min="0">
+    
+            <label for="ficha100000"> Fichas de 100,000:</label>
+            <input type="number" id="ficha100000" min="0">
+    
+            <label for="ficha50000"> Fichas de 50,000:</label>
+            <input type="number" id="ficha50000" min="0">
+    
+            <label for="ficha20000"> Fichas de 20,000:</label>
+            <input type="number" id="ficha20000" min="0">
+    
+            <label for="ficha10000"> Fichas de 10,000:</label>
+            <input type="number" id="ficha10000" min="0">
+    
+            <label for="ficha5000"> Fichas de 5,000:</label>
+            <input type="number" id="ficha5000" min="0">
+    
+            <label for="ficha2000"> Fichas de 2,000:</label>
+            <input type="number" id="ficha2000" min="0">
+    
+            <label for="ficha1000"> Fichas de 1,000:</label>
+            <input type="number" id="ficha1000" min="0">
+    
+            <label for="ficha500"> Fichas de 500:</label>
+            <input type="number" id="ficha500" min="0">
+    
+            <label for="ficha200"> Fichas de 200:</label>
+            <input type="number" id="ficha200" min="0">
+    
+            <label for="ficha100"> Fichas de 100:</label>
+            <input type="number" id="ficha100" min="0">
+            
+            <label for="capitalFijo">Capital Fijo de la Mesa:</label>
+            <input type="number" id="capitalFijo" min="0">
+
+            <label for="capitalInicial">Capital Inicial de la Mesa:</label>
+            <input type="number" id="capitalInicial" min="0">
+
+            <label for="cajaEmpleados">Recaudación C.E.:</label>
+            <input type="number" id="cajaEmpleados" min="0">
+
+          <div class="botones"> 
+            <button class="boton" type="button" onclick="calcularCapital()">Calcular</button>
+            <input class="boton" type="reset" value="Reset">
+            <button class="boton" onclick="enviar()">Enviar</button>
+            <button class="boton" onclick="imprimir()">Imprimir</button>
+        </div>
+        </form>
+    
+        <div id="resultado"></div>
+        <div id="beneficio"></div>
+    
+        
+    </body>
+    <footer><img src="logo.png">  <p class="copy">&copy;Copyright 2023 - Pinamar</p>
+        </footer>
+ 
+    </html>
+    

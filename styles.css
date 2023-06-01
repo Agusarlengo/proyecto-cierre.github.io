@@ -1,0 +1,140 @@
+/* Estilos CSS */
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-image: url("OIP.png");
+    background-size: cover;
+    background-position: center;
+    color: rgb(24, 99, 5);
+    height: 50px;
+}
+header img {
+    width: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-right: 10px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+
+}
+#separador{
+    background-color:hsla(133, 100%, 25%, 0.52);
+    height: 10px; 
+    width: 640px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100px;
+    padding: 15px;
+    height: 5px;
+    background-color:hsla(133, 100%, 25%, 0.52);
+}
+
+select {
+    width: 220px;
+    padding: 5px;
+}
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.boton {
+    width: 150px;
+    padding: 10px 20px;
+    background-color:lightgreen;
+    color: darkslategrey;
+    border: 2px solid darkgreen;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: auto;
+    display:grid;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 0px rgba(0, 128, 28, 0.52);
+    text-align: center;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#beneficio {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.beneficio-verde {
+    color: green;
+}
+
+.quebranto-rojo {
+    color: red;
+}
+
+/* Estilos CSS para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    label {
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        font-size: 14px;
+        padding: 8px;       
+    }
+    input{
+        background-color:hsla(133, 100%, 25%, 0.52);
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    
+      
+      .form input {
+        width: 90%;
+        height: 30px;
+        margin: 0.5rem;
+      }
+}
+
+
+  
+  
